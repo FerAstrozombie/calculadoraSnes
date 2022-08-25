@@ -5,31 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
+    <script src="./Display.js" type="text/javascript"></script>
+    <script src="./Calculadora.js" type="text/javascript"></script>
+    <script src="./app.js" type="text/javascript" defer></script>
     <title>CalculadoraSnes</title>
 </head>
 <body>
     
     <div class="nes-container is-rounded" id="calculadora">
         <div class="nes-container is-rounded" id="visor">
+            <div id="valorAnterior"></div>
+            <div id="valorActual"></div>
         </div>    
-        <a class="nes-btn" id="numeros" href="#">0</a>
-        <a class="nes-btn" id="numeros" href="#">1</a>
-        <a class="nes-btn" id="numeros" href="#">2</a>
-        <button type="button" class="nes-btn is-error" id="borrar">Borrar</button>
-        <a class="nes-btn" id="numeros" href="#">3</a>
-        <a class="nes-btn" id="numeros" href="#">4</a>
-        <a class="nes-btn" id="numeros" href="#">5</a>
-        <button type="button" class="nes-btn is-success" id="cuentas">+</button>
-        <button type="button" class="nes-btn is-success" id="cuentas">-</button>
-        <a class="nes-btn" id="numeros" href="#">6</a>
-        <a class="nes-btn" id="numeros" href="#">7</a>
-        <a class="nes-btn" id="numeros" href="#">8</a>
-        <button type="button" class="nes-btn is-success" id="cuentas">*</button>
-        <button type="button" class="nes-btn is-success" id="cuentas">/</button>
-        <a class="nes-btn" id="numeros" href="#">9</a>
-        <button type="button" class="nes-btn is-warning" id="porcentaje">%</button>
-        <button type="button" class="nes-btn is-warning" id="porcentaje">@</button>
-        <button type="button" class="nes-btn is-primary" id="borrar">=</button>
+        <button type="button" class="nes-btn is-primary numero">0</button>
+        <button type="button" class="nes-btn is-primary numero">1</button>
+        <button type="button" class="nes-btn is-primary numero">2</button>
+        <button onclick = "display.borrarTodo()" class="nes-btn is-error borrarTodo">Borrar todo</button>
+        <button type="button" class="nes-btn is-primary numero">3</button>
+        <button type="button" class="nes-btn is-primary numero">4</button>
+        <button type="button" class="nes-btn is-primary numero">5</button>
+        <button type="button" class="nes-btn is-success operador" value="sumar">+</button>
+        <button type="button" class="nes-btn is-success operador" value="restar">-</button>
+        <button type="button" class="nes-btn is-primary numero">6</button>
+        <button type="button" class="nes-btn is-primary numero">7</button>
+        <button type="button" class="nes-btn is-primary numero">8</button>
+        <button type="button" class="nes-btn is-success operador" value="multiplicar">*</button>
+        <button type="button" class="nes-btn is-success operador" value="dividir">/</button>
+        <button type="button" class="nes-btn is-primary numero">9</button>        
+        <button type="button" class="nes-btn is-warning numero">.</button>
+        <button onclick = "display.borrar()" class="nes-btn is-primary borrar">&larr;</button>
+        <button type="button" class="nes-btn is-primary operador igual" value="igual">=</button>
     </div>
 
 

@@ -16,24 +16,44 @@ body {
 }
 #visor {
     height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;    
 }
-
-#numeros {
-    margin-top: 20px;
+#valorActual {
+    font-size: 1.5em;    
 }
-#borrar {
-    margin-top: 16px;
-    width: 120px;
+#valorAnterior {
+    font-size: 2em;    
+}
+.numero {
+    margin-top: 20px !important;
+}
+.borrar {
+    margin-top: 20px !important;
+    width: 80px !important;
 }
 .nes-btn {
     width: 80px;
     height: 80px;
 }
-#cuentas {
+.operador {
     width: 48px;
-    margin-top: 20px;
+    margin-top: 20px !important;
 }
 #porcentaje {
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
+.igual {
+    margin-top: 16px !important;
+    width: 120px !important;
+}
+
+.borrarTodo{
+    margin-top: 20px !important;
+    width: 120px !important;
+}
